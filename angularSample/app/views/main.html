@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <p><input type="text" ng-model="world"></p>
+  <p>Hello {{ world }}!</p>
+  <p ng-init = "frameworks =  [ 'Backbone.js', 'Ember.js', 'Knockout.js']">
+    <h3>{{ frameworks.length }} frameworks</h3>
+    <ul>
+      <li ng-repeat="f in frameworks">{{ f }}</li>
+    </ul>
+  </p>
+</div>
