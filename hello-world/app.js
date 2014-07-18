@@ -35,6 +35,8 @@ app.get('/xml', function(req, res) {
  });
 });
 
+app.use('/static', express.static(__dirname + '/public'));
+
 var server = app.listen(3000,function() {
   console.log('Listening on port %d', server.address().port);
 });
