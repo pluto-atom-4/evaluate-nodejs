@@ -13,9 +13,7 @@ app.get('/rest',function(req, res) {
       stderr: true
   };
   console.log('%s', options.url);
-  curl.request(options, function(err, parts) {
-    parts = parts.split('\r\n');
-   var data = parts.pop();
+  curl.request(options, function(err, data) {
     console.log(JSON.stringify(data, null, 4));
     res.send(JSON.stringify(JSON.parse(data), null, 4));
  });
