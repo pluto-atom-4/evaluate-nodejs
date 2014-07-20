@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hello SyntaxHighlighter</title>
+    <script type="text/javascript" src="jquery-latest.js"></script>
+	<script type="text/javascript" src="syntaxhighlighter/pkg/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntaxhighlighter/pkg/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntaxhighlighter/pkg/scripts/shBrushXml.js"></script>
+	<link type="text/css" rel="stylesheet" href="syntaxhighlighter/pkg/styles/shCoreDefault.css">
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<style type="text/css">
+		body {
+			background: white;
+			font-family: helvetica;
+		}
+	</style>
+<script>
+<!--
+ $(document).ready( function() {
+  var xmlUrl = '/xml';
+  $.get(xmlUrl, function(data,status) {
+    var newPre = $("<pre id='xml' class='brush: xml;'>")
+    newPre.text(data);
+    $('#content').append(newPre);
+    SyntaxHighlighter.highlight();
+  });
+});
+
+// -->
+</script>
+</head>
+
+<body>
+
+<h1>Hello SyntaxHighlighter</h1>
+
+<pre id="pre-js-sh" class="brush: js;">
+function helloSyntaxHighlighter()
+{
+	return "hi!";
+}
+</pre>
+
+<pre id="pre-xml-sh" class="brush: xml;">
+&lt;test&gt; 123 &lt;/test&gt;
+</pre>
+
+<div id="content"></div>
+</body>
+</html>
